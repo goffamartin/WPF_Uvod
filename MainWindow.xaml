@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_úvod.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_úvod"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="220.222" Width="250
+        ">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.33*"/>
+            <RowDefinition Height="0.33*"/>
+            <RowDefinition Height="0.33*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="25"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Zadejte jméno" FontSize="16" Grid.Row="0" Grid.Column="1" Height="30"/>
+        <TextBox x:Name="nameBox" Grid.Row="1" Grid.Column="1" Height="25"/>
+        <Button x:Name="submitButton" Grid.Row="2" Grid.Column="1" Width=" 175" Height=" 50" Content="Submit" Click="submitButton_Click" />
+    </Grid>
+</Window>
